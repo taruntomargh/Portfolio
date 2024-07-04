@@ -1,0 +1,45 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar h1 div {
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.objective {
+  font-size: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
