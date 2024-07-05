@@ -21,6 +21,39 @@ body {
   align-items: center;
 }
 
+@keyframes nameAnimation {
+  0% {
+      color: #9fad0b;  
+  }
+  25% {
+    color: #13ad0b;
+  }
+  50% {
+    color: #210bad;
+  }
+  75% {
+    color: #ad0b16;
+  }
+  100% {
+      color: #9fad0b;
+  }
+}
+
+#name {
+  font-size: 24px;
+  font-weight: 600;
+
+  animation-name: nameAnimation;
+
+  animation-duration: 3s; 
+  animation-timing-function: linear;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite; 
+  animation-direction: normal; 
+  animation-fill-mode: none; 
+  animation-play-state: running;
+}
+
 .navbar h1 div {
   margin: 0;
 }
@@ -32,7 +65,15 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .objective {
